@@ -87,38 +87,6 @@ The Fuel Station Management System is a comprehensive Java application designed 
 2. **Database Setup**: Configure the database connection in `DatabaseConnection.java`.
 3. **Run the Application**: Start the application from `HomeView.java`.
 
-## Logging Setup in AdminFrame.java
-To set up logging in `AdminFrame.java`, the following steps were implemented:
-
-1. **Import Logging Libraries**:
-    ```java
-    import java.util.logging.Logger;
-    import java.util.logging.FileHandler;
-    import java.util.logging.SimpleFormatter;
-    ```
-
-2. **Initialize Logger**:
-    ```java
-    private static final Logger logger = Logger.getLogger(AdminFrame.class.getName());
-    static {
-        try {
-            FileHandler fileHandler = new FileHandler("admin.log", true);
-            fileHandler.setFormatter(new SimpleFormatter());
-            logger.addHandler(fileHandler);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    ```
-
-3. **Log Admin Actions**:
-    ```java
-    public void someAdminAction() {
-        logger.info("Admin performed an action");
-        // Action code here
-    }
-    ```
-
 ## Future Enhancements
 - **Detailed Error Handling**: Improve error handling mechanisms for better user experience.
 - **User Roles and Permissions**: Implement role-based access control to enhance security.
