@@ -1,7 +1,3 @@
-# Fuel Station Management System Documentation
-
-## Project Overview
-The Fuel Station Management System is a comprehensive Java application designed to streamline and manage the operations of a fuel station. This system includes functionalities for admin tasks, customer management, employee management, fuel supply tracking, inventory control, and transaction processing.
 
 ## Interfaces
 
@@ -86,6 +82,7 @@ The Fuel Station Management System is a comprehensive Java application designed 
 1. **Clone the Repository**: Download the project files from the repository.
 2. **Database Setup**: Configure the database connection in `DatabaseConnection.java`.
 3. **Run the Application**: Start the application from `HomeView.java`.
+
 
 ## Future Enhancements
 - **Detailed Error Handling**: Improve error handling mechanisms for better user experience.
